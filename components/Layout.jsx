@@ -1,15 +1,16 @@
 import React from 'react'
 import Header from './Header'
-import Sidebar from './Sidebar'
+import { withTheme } from "../components/Theme";
 
 function Layout(props) {
     return (
         <div>
             <Header />
-            <Sidebar />
+            {/* <Sidebar /> */}
+            {/* <Button color="secondary">MUI button</Button> */}
             {props.children}
         </div>
     )
 }
 
-export default Layout
+export default withTheme(Layout)
